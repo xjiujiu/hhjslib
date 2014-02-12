@@ -1,13 +1,10 @@
 /**
  * $Id$
  * @title HHJsLib
- * @description 红橘子信息科技工作室，Javascript开源工具库，
- *              只为做最好的后台语言协作助手！
- *              官网：http://www.hongjuzi.net/hhjslib
+ * @description 基地Js库基础类
  * @author xjiujiu (xjiujiu@foxmail.com)
  * @create 2012-08-13 9:30:00
  */
-
 //事件注册及自动初始化工具脚本
 var $HH = HHJsLib = window.HHJsLib = {
     $target: null,      // 需要操作的对象

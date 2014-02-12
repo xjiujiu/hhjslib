@@ -407,17 +407,17 @@
         fieldHint: function(target) {
             $(target).each(function() {
                 var $this   = $(this);
-                var def     = $this.attr('def') ? $this.attr('def') : $this.val();
+                var def     = $this.attr('data-def') ? $this.attr('data-def') : $this.val();
                 $(this).val(def)
                 .css('color', '#999')
                 .click(function() {
-                    if($(this).attr('def') == $(this).val()) {
+                    if($(this).attr('data-def') == $(this).val()) {
                         $(this).val("");
                     }
                     $(this).css('color', '#000')
                 }).blur(function() {
                     if('' == $(this).val()) {
-                        $(this).val($(this).attr('def'));
+                        $(this).val($(this).attr('data-def'));
                         $(this).css('color', '#999');
                     }
                 });

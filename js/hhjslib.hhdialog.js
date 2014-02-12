@@ -139,12 +139,13 @@
 			this.focusTarget(msg.dom);
             if('confirm' !== type) {
                 alert(this.getMessage(msg));
-                return this;
+                return false;
             }
             if(confirm(msg)) {
-                'undefined' !== typeof(callback) ? '': callback();
+                return 'undefined' !== typeof(callback) ? false: callback();
             }
-            return this;
+
+            return false;
         }
     };
     //扩展到HHJsLib类功能中

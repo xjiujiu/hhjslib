@@ -77,8 +77,8 @@
          * @throws HHValidateException 
          */
         isEmptyByDom: function(target, name, def) {
-            if('undefined' == typeof(def) && $(target).attr('def')) {
-                def = $(target).attr('def');
+            if('undefined' == typeof(def) && $(target).attr('data-def')) {
+                def = $(target).attr('data-def');
             }
             return this._isValidateByDom(this.isEmpty, target, [name, def]);
         },
